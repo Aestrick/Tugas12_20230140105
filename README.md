@@ -24,3 +24,4 @@ Tugas praktikum ini meliputi:
 5.  Hasil input akan ditampilkan dalam sebuah jendela alert.
 
 ## Screenshot Hasil Program
+![Hasil Pendaftaran Program](Screenshot%202025-05-27%20163043.png)

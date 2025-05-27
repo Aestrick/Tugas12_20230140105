@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed #ddd; /* Creative border */
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    color: #5e2ced; /* Vibrant color */
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group p {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 22px); /* Account for padding */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #71b7e6;
+    box-shadow: 0 0 8px rgba(113, 183, 230, 0.3); /* Glow effect */
+    outline: none;
+}
+
+.radio-group label {
+    font-weight: 400; /* Lighter weight for radio labels */
+    margin-left: 5px;
+    color: #444;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #5e2ced; /* Match button color */
+}
+
+button[type="button"] {
+    background: linear-gradient(45deg, #5e2ced, #a485f7); /* Gradient button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px; /* Pill shape button */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+button[type="button"]:hover {
+    background: linear-gradient(45deg, #4d24c0, #8a65f0);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button[type="button"]:active {
+    transform: translateY(0px); /* Press down effect */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}

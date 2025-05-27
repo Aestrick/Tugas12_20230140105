@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM Javascript - Pendaftaran Peminatan</title> </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pendaftaran Peminatan Mahasiswa</h1> </div>
+        <form id="peminatanForm"> <div class="form-group">
+                <label for="nama">Nama Lengkap:</label><br> <input type="text" placeholder="Masukkan Nama Anda" id="nama" name="nama" required><br><br> </div>
+
+            <div class="form-group">
+                <label for="nim">NIM:</label><br> <input type="text" placeholder="Masukkan NIM Anda" id="nim" name="nim" required><br><br> </div>
+
+            <div class="form-group">
+                <p>Peminatan pada bidang:</p> <div class="radio-group">
+                    <input type="radio" name="peminatan" id="programming" value="Programming" required> <label for="programming">Programming</label><br> <input type="radio" name="peminatan" id="desain" value="Desain Grafis"> <label for="desain">Desain Grafis</label><br> <input type="radio" name="peminatan" id="jaringan" value="Jaringan Komputer"> <label for="jaringan">Jaringan Komputer</label><br> <input type="radio" name="peminatan" id="data" value="Sains Data"> <label for="data">Sains Data</label><br><br> </div>
+            </div>
+
+            <div class="form-group">
+                <label for="angkatan">Pilih Angkatan:</label><br> <select id="angkatan" name="angkatan" required>
+                    <option value="">-- Pilih Tahun Angkatan --</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal">Tanggal Pendaftaran:</label><br> <input type="date" id="tanggal" name="tanggal" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap:</label><br> <textarea placeholder="Tuliskan alamat lengkap Anda di sini" name="alamat" id="alamat" cols="30" rows="5" required></textarea><br><br> </div>
+
+            <button type="button" onclick="kirimData()">Kirim Data Anda</button> </form>
+        <div class="footer">
+            <p>&copy; 2025 Web Design Development - UMY</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
